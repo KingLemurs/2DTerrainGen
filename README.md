@@ -40,4 +40,10 @@ Layer Data - The CORE part of this generator. The generator is made up of "Layer
 
 See the output folder for examples of outputs.
 
-This generator ONLY works for Unity. Another limitation is that it does not do well with multiple regions/biomes. If you want more biomes, use multiple generators in tandom.
+This generator ONLY works for Unity. Another limitation is that it does not do well with multiple regions/biomes. If you want something like biomes, use multiple generators in tandom.
+
+
+### TESTER NOTES
+Initially all my testers were a little frustrated with not being able to add variation to tiles, so I changed the system of available tiles from single tiles to a weighted list of possible tiles, so there can be variations within each tileset.
+
+There were initially also a lot of bugs with inputs, so I had to make a function that scrubs user inputs to ensure valid inputs free of errors.
