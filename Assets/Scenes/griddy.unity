@@ -262,19 +262,33 @@ MonoBehaviour:
   - layerType: 0
     layerThreshold: 0
     availableTiles:
-    - {fileID: 11400000, guid: 92b70e29739ec4d59b6313310700dd50, type: 2}
-    - {fileID: 11400000, guid: 47a952b3004374624b56111d32570214, type: 2}
-    - {fileID: 11400000, guid: ecc0fd2fdd66f42ab9ee3da5d6059f9d, type: 2}
-    - {fileID: 11400000, guid: edf9bb192a94b457f8889b19e45ec868, type: 2}
-    - {fileID: 11400000, guid: 81b3f1599e60149b69c401010807ebc4, type: 2}
-    - {fileID: 11400000, guid: 8cee1e154d2b84c2db771e2415cfc544, type: 2}
-    noiseScale: 0
+    - {fileID: 11400000, guid: b1e39536ec6434d9996734124ebfd3e5, type: 2}
+    - {fileID: 11400000, guid: 9e25b8f8c81c749d7af04d1cb68d9493, type: 2}
+    noiseScale: 0.2
     type: 0
-    fractalType: 0
-    fractalGain: 0
-  seed: 0
-  mapWidth: 0
-  mapHeight: 0
+    fractalType: 1
+    fractalGain: 0.5
+  - layerType: 1
+    layerThreshold: 0.8
+    availableTiles:
+    - {fileID: 11400000, guid: c044f4e7a8c034d9894536705eb932ac, type: 2}
+    - {fileID: 11400000, guid: 9e25b8f8c81c749d7af04d1cb68d9493, type: 2}
+    - {fileID: 11400000, guid: ee609e452bf6d4ea88eeff98653d47d5, type: 2}
+    noiseScale: 1
+    type: 0
+    fractalType: 2
+    fractalGain: 0.2
+  - layerType: 2
+    layerThreshold: 0.2
+    availableTiles:
+    - {fileID: 11400000, guid: 41d526b936a0a415c848c9a699658489, type: 2}
+    noiseScale: 1
+    type: 0
+    fractalType: 3
+    fractalGain: 0.2
+  seed: 250
+  mapWidth: 320
+  mapHeight: 160
 --- !u!483693784 &1020532954
 TilemapRenderer:
   m_ObjectHideFlags: 0

@@ -106,15 +106,15 @@ public class PerlinNoiseMap : MonoBehaviour
         float noiseScale = layerData[index].noiseScale;
         float raw = _noiseLayers[index].GetNoise((x + seed) / noiseScale, (y + seed) / noiseScale);
 
-        if (layerData[index].layerType == LayerType.ADD && layerData[index].layerThreshold > raw)
+        if (layerData[index].layerType == LayerType.ADD && layerData[index].layerThreshold < 1 - raw)
         {
             return SKIP_FLAG;
         }
-        else if (layerData[index].layerType == LayerType.SUBTRACT && layerData[index].layerThreshold > raw)
+        else if (layerData[index].layerType == LayerType.SUBTRACT && layerData[index].layerThreshold > 1 - raw)
         {
             return SUBTRACT_FLAG;
         }
-        else if (layerData[index].layerType == LayerType.SUBTRACT && layerData[index].layerThreshold <= raw)
+        else if (layerData[index].layerType == LayerType.SUBTRACT && layerData[index].layerThreshold <= 1 - raw)
         {
             return SKIP_FLAG;
         }
